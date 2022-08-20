@@ -1,0 +1,100 @@
+@import url(bootstrap.min.css);
+@import url(all.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+*{
+    --main-color: #E7F6F2;
+    --secondary-color: #f68b1f;
+    --second-secondary-color: #f49332;
+    --text-color: #1B2430;
+
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color) !important;
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    background-color: var(--main-color);
+    height: max-content;
+    padding: 1rem 5rem !important;
+}
+
+.table{
+    margin-top: 1.5rem !important;
+}
+
+.table td{
+    border-width: 1px !important;
+}
+
+.table tbody tr:first-child{
+    background-color: var(--secondary-color) !important;
+}
+
+.fa-solid{
+    margin-right: 2rem !important;
+}
+
+main > div > div > button{
+    gap: 0.5rem;
+    border: 1px solid var(--text-color) !important;
+}
+
+main > div > div > button:hover{
+    background-color: var(--second-secondary-color) !important;
+    border: 1px solid;
+    border-color: transparent !important;
+}
+
+main > div > div > .modal{
+    background-color: rgba(255, 255, 255, 0.225);
+}
+
+main > div > div > .modal .modal-content{
+    background-color: var(--main-color);
+}
+
+.modal-header .btn-close{
+    color: var(--text-color) !important;
+}
+
+.modal-content{
+    background-color: var(--main-color) !important;
+}
+
+.modal-content .modal-header #search{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid var(--text-color);
+    font-size: 1.2rem;
+}
+
+.modal-content .modal-header #search:focus{
+    border: solid var(--second-secondary-color) 1px !important;
+    outline: none;
+}
+
+.modal-body > p:nth-child(2) strong{
+    font-size: 1.5rem !important;
+}
+
+.modal-content .btn{
+    background-color: var(--main-color);
+    border: 1px solid var(--text-color);
+}
+
+.modal-content .btn:hover{
+    background-color: var(--second-secondary-color);
+    border-color: transparent;
+}
+
+.modal-content .modal-title{
+    color: var(--text-color) !important;
+    font-weight: bold;
+}
+
+strong{
+    font-size: 1.1rem;
+}
