@@ -19,7 +19,7 @@ inputField.addEventListener("keydown", (e) => {
             || value.toUpperCase().includes("MATH") || value.toUpperCase().includes("BIO") || value.toUpperCase().includes("ECO") ||
             value.toUpperCase().includes("EEE") || value.toUpperCase().includes("ENG") || value.toUpperCase().includes("IPE") 
             || value.toUpperCase().includes("PHY") || value.toUpperCase().includes("PSY") || value.toUpperCase().includes("SOC") 
-            || value.toUpperCase().includes("TEC") || value.toUpperCase().includes("URC")) && (value.toUpperCase().length >= 7)) {
+            || value.toUpperCase().includes("TEC") || value.toUpperCase().includes("URC") || value.toUpperCase().includes("CSI")) && (value.toUpperCase().length >= 7)) {
             modalBody.innerHTML = "";
             courses.forEach(element => {
                 if (element.querySelector("td:nth-child(2)").innerText.includes(value.toUpperCase())) {
