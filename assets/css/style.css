@@ -1,2 +1,153 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins');
-@import url('all.css');
+@import url(all.css);
+@import url(bootstrap.min.css);
+
+* {
+    --main-color: #2D3434;
+    --linear-gradiant-one: rgba(165, 201, 202, 1);
+    --linear-gradiant-two: rgba(165, 201, 202, 0.32);
+    --overlay-one: rgba(217, 217, 217, 0.05);
+    --text: #A5C9CA;
+    font-family: poppins, sans-serif;
+    color: var(--text);
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--main-color);
+}
+
+main {
+    height: 100vh;
+    width: 85vw;
+    background-color: var(--overlay-one);
+    margin: auto;
+
+    position: relative;
+}
+
+.main-cont{
+    width: 82vw;
+    height: 93.5vh;
+    padding: 0 9rem;
+
+    position: absolute;
+    left: 1.8%;
+    top: 3%;
+    background-color: var(--main-color);
+}
+
+.border-one {
+    position: absolute;
+}
+
+.corners {
+    height: 1.5rem;
+    width: 15rem;
+    background: rgb(165, 201, 202);
+    background: linear-gradient(90deg, var(--linear-gradiant-one) 0%, var(--linear-gradiant-two) 100%);
+    
+}
+
+.shape-one{
+    clip-path: polygon( 0rem 0%, 
+                        100% 0%, 
+                        82% 100%, 
+                        0% 100%, 
+                        0% 100%);
+}
+
+.shape-two{
+    clip-path: polygon( 0rem 0%, 
+                        82% 0%, 
+                        100% 100%, 
+                        0% 100%, 
+                        0% 100%);
+}
+
+.rotate-90{
+    transform: rotate(90deg);
+    transform-origin: 10% 0%;
+}
+
+.border-two{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: rotate(180deg);
+}
+
+.main-cont h1{
+    font-size: 5rem;
+}
+
+.corners-border{
+    height: 0.2rem;
+    width: 6rem;
+    transform: rotate(90deg);
+    transform-origin: 0% 0%;
+}
+
+
+.info > div > div:nth-child(2){
+    margin-left: -5rem;
+}
+
+.project-section{
+    position: relative;
+    width: 18rem;
+}
+
+.project-section .corners{
+    width: 4rem;
+    height: 0.2rem;
+}
+
+.project-section .rotate-90{
+    transform-origin: 5% 0%;
+}
+
+.project-section .links{
+    position: absolute;
+    left: 2%;
+    height: 11rem;
+
+    overflow-y: auto;
+    padding-right: 1rem !important;
+
+}
+
+.project-section .links a{
+    text-decoration: none;
+    color: var(--text);
+    border-bottom: 1px solid transparent;
+    display: block;
+}
+
+.project-section .links a:hover{
+    border-bottom: 1px solid var(--text);
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.2rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--linear-gradiant-two); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--linear-gradiant-one); 
+  }
